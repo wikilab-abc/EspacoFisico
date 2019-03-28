@@ -1,8 +1,8 @@
-TARGETS = ui_mainwindow.py ui_cadastroPessoas.py ui_DlgEspacoFisico.py
+TARGETS = ui_MainWindow.py ui_cadastroPessoas.py ui_DlgEspacoFisico.py
 
 all: ${TARGETS}
 
-ui_mainwindow.py: mainwindow.ui
+ui_MainWindow.py: MainWindow.ui
 	pyuic5 $< > $@
 ui_cadastroPessoas.py: cadastroPessoas.ui
 	pyuic5 $< > $@
